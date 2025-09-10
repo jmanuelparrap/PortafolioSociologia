@@ -6,7 +6,7 @@
     --neon-pink: #ff00ff;
     --neon-purple: #bd00ff;
     --text-color: #ffffff;
-    --text-muted: #aaaaaa;
+    --text-muted: #ffffff;
 }
 
 /* Estilos generales */
@@ -266,10 +266,11 @@ header {
 }
 
 .bio-text {
-    color: var(--text-muted);
+    color: rgb(255, 255, 255);
     line-height: 1.8;
     margin-bottom: 20px;
     text-align: justify;
+    font-size: 1.1rem;
 }
 
 .bio-highlight {
@@ -324,7 +325,7 @@ header {
 }
 
 .timeline-content {
-    color: var(--text-muted);
+    color: rgb(255, 255, 255);
 }
 
 /* Obras destacadas */

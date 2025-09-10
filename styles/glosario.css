@@ -325,9 +325,10 @@
         }
 
         .term-definition {
-            color: var(--text-muted);
+            color: rgb(255, 255, 255);
             line-height: 1.7;
             margin-bottom: 15px;
+            font-size: 1.5rem;
         }
 
         .term-example {

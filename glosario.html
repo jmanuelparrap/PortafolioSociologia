@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="styles/glosario.css">
     <link rel="stylesheet" href="styles/nav.css">
 </head>
+
 <body>
     <div id="particles-js"></div>
-    
+
     <header>
         <div class="header-container">
             <div class="logo">
@@ -46,10 +48,11 @@
         <a href="index.html" class="back-button">
             <i class="fas fa-arrow-left"></i> Volver al Inicio
         </a>
-        
+
         <div class="page-header">
             <h1 class="page-title">Glosario de Términos</h1>
-            <p class="page-subtitle">Diccionario especializado de conceptos y terminología académica con explicaciones detalladas y ejemplos</p>
+            <p class="page-subtitle">Diccionario especializado de conceptos y terminología académica con explicaciones
+                detalladas y ejemplos</p>
         </div>
 
         <!-- Búsqueda y filtros -->
@@ -58,7 +61,7 @@
                 <i class="fas fa-search search-icon"></i>
                 <input type="text" class="search-input" placeholder="Buscar término...">
             </div>
-            
+
             <div class="alphabet-filter">
                 <button class="letter-btn">A</button>
                 <button class="letter-btn">B</button>
@@ -66,79 +69,393 @@
                 <button class="letter-btn">D</button>
                 <button class="letter-btn">E</button>
                 <button class="letter-btn">F</button>
-                <button class="letter-btn active">T</button>
+                <button class="letter-btn">G</button>
+                <button class="letter-btn">H</button>
+                <button class="letter-btn">I</button>
+                <button class="letter-btn">J</button>
+                <button class="letter-btn">K</button>
+                <button class="letter-btn">L</button>
+                <button class="letter-btn">M</button>
+                <button class="letter-btn">N</button>
+                <button class="letter-btn">O</button>
+                <button class="letter-btn">P</button>
+                <button class="letter-btn">Q</button>   
+                <button class="letter-btn">R</button>
+                <button class="letter-btn">S</button>
+                <button class="letter-btn">T</button>
+                <button class="letter-btn">U</button>
+                <button class="letter-btn">V</button>
+                <button class="letter-btn">W</button>
+                <button class="letter-btn">X</button>
+                <button class="letter-btn">Y</button>
+                <button class="letter-btn">Z</button>
                 <!-- Más letras... -->
             </div>
         </div>
 
         <!-- Índice de términos -->
         <div class="terms-index">
-            <a href="#boicotee" class="index-item">Boicotee</a>
-            <a href="#coautoria" class="index-item">Coautoría</a>
-            <a href="#comorbilidades" class="index-item">Comorbilidades</a>
-            <a href="#desgonzado" class="index-item">Desgonzado</a>
-            <a href="#esmad" class="index-item">ESMAD</a>
-            <a href="#estriba" class="index-item">Estriba</a>
-            <a href="#exteriorizacion" class="index-item">Exteriorización</a>
-            <a href="#fao" class="index-item">FAO</a>
-            <a href="#folklore" class="index-item">Folklore</a>
-            <a href="#funesto" class="index-item">Funesto</a>
-            <a href="#interpelamos" class="index-item">Interpelamos</a>
+            <a data-filter="los_nadies" class="index-item">Los Nadies</a>
+            <a data-filter="sobre_lectura" class="index-item">Sobre la Lectura</a>
+            <a data-filter="historia_ordinaria" class="index-item">Historia Ordinaria</a>
+            <a data-filter="hambruna" class="index-item">Hambruna</a>
+            <a data-filter="amor" class="index-item">Amor en tiempo de la Tecnología</a>
+            <a data-filter="t_conciencia" class="index-item">Tipos de Conciencia</a>
+            <a data-filter="instituyente" class="index-item">Intituyente vs Instituido</a>
         </div>
 
         <!-- Lista de términos -->
+        <!-- Lista de términos -->
         <div class="terms-list">
-            <div id="boicotee" class="term-card">
-                <div class="term-header"><h2 class="term-name">Boicotee</h2></div>
-                <div class="term-definition"><p>Acción de interrumpir, obstaculizar o impedir el desarrollo de una actividad, empresa o proceso como forma de presión o protesta.</p></div>
+
+            <!-- SOBRE LA LECTURA -->
+            <div id="estriba" class="term-card" data-texto="sobre_lectura">
+                <div class="term-header">
+                    <h2 class="term-name">Estriba</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Indica el fundamento o base sobre la que se sostiene una idea, argumento o situación.</p>
+                </div>
             </div>
-            <div id="coautoria" class="term-card">
-                <div class="term-header"><h2 class="term-name">Coautoría</h2></div>
-                <div class="term-definition"><p>Condición de compartir la autoría de una obra, investigación o proyecto con otras personas. Implica participación y responsabilidad conjunta.</p></div>
+
+            <div id="interpelamos" class="term-card" data-texto="sobre_lectura">
+                <div class="term-header">
+                    <h2 class="term-name">Interpelamos</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Acción de llamar o cuestionar a alguien para obtener explicaciones o provocar reflexión.</p>
+                </div>
             </div>
-            <div id="comorbilidades" class="term-card">
-                <div class="term-header"><h2 class="term-name">Comorbilidades</h2></div>
-                <div class="term-definition"><p>Presencia de dos o más enfermedades o trastornos en una misma persona al mismo tiempo, lo que puede complicar el diagnóstico y tratamiento.</p></div>
+
+            <div id="coautoria" class="term-card" data-texto="sobre_lectura">
+                <div class="term-header">
+                    <h2 class="term-name">Coautoría</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Compartir la autoría de una obra, texto o investigación con otras personas, implicando
+                        responsabilidad conjunta.</p>
+                </div>
             </div>
-            <div id="desgonzado" class="term-card">
-                <div class="term-header"><h2 class="term-name">Desgonzado</h2></div>
-                <div class="term-definition"><p>Que ha perdido fuerza, estabilidad o control, como si se hubiese desarticulado o quedado sin sostén.</p></div>
+
+            <div id="interpretativo" class="term-card" data-texto="sobre_lectura">
+                <div class="term-header">
+                    <h2 class="term-name">Interpretativo</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Proceso de dar sentido o explicación a un texto o situación a partir del análisis y la
+                        comprensión.</p>
+                </div>
             </div>
-            <div id="esmad" class="term-card">
-                <div class="term-header"><h2 class="term-name">ESMAD</h2></div>
-                <div class="term-definition"><p>Sigla de Escuadrón Móvil Antidisturbios, unidad de la Policía Nacional de Colombia encargada de controlar disturbios y manifestaciones públicas.</p></div>
+
+            <div id="metafora" class="term-card" data-texto="sobre_lectura">
+                <div class="term-header">
+                    <h2 class="term-name">Metáfora</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Recurso literario que consiste en trasladar el significado de una palabra a otra por semejanza.
+                    </p>
+                </div>
             </div>
-            <div id="estriba" class="term-card">
-                <div class="term-header"><h2 class="term-name">Estriba</h2></div>
-                <div class="term-definition"><p>Indica la base o fundamento en el que se apoya algo. Por ejemplo, se dice que una idea estriba en ciertos principios.</p></div>
+
+            <div id="desciframiento" class="term-card" data-texto="sobre_lectura">
+                <div class="term-header">
+                    <h2 class="term-name">Desciframiento</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Acción de comprender o interpretar lo oculto o difícil de entender en un texto o mensaje.</p>
+                </div>
             </div>
-            <div id="exteriorizacion" class="term-card">
-                <div class="term-header"><h2 class="term-name">Exteriorización</h2></div>
-                <div class="term-definition"><p>Acción de expresar, mostrar o hacer visible sentimientos, pensamientos o intenciones que estaban en el interior.</p></div>
+
+            <div id="produccion_sentido" class="term-card" data-texto="sobre_lectura">
+                <div class="term-header">
+                    <h2 class="term-name">Producción de sentido</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Proceso mediante el cual se construye significado a partir de la lectura, la interpretación y la
+                        reflexión.</p>
+                </div>
             </div>
-            <div id="fao" class="term-card">
-                <div class="term-header"><h2 class="term-name">FAO</h2></div>
-                <div class="term-definition"><p>Sigla de la Organización de las Naciones Unidas para la Alimentación y la Agricultura, encargada de dirigir esfuerzos internacionales contra el hambre.</p></div>
+
+            <!-- LOS NADIES -->
+            <div id="folklore" class="term-card" data-texto="los_nadies">
+                <div class="term-header">
+                    <h2 class="term-name">Folklore</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Conjunto de costumbres, tradiciones y expresiones culturales de un pueblo, transmitidas de
+                        generación en generación.</p>
+                </div>
             </div>
-            <div id="folklore" class="term-card">
-                <div class="term-header"><h2 class="term-name">Folklore</h2></div>
-                <div class="term-definition"><p>Conjunto de tradiciones, expresiones artísticas, costumbres y creencias transmitidas de generación en generación en una comunidad.</p></div>
+
+            <div id="cronica" class="term-card" data-texto="los_nadies">
+                <div class="term-header">
+                    <h2 class="term-name">Crónica</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Relato de hechos reales narrados en orden temporal, generalmente con una intención testimonial o
+                        reflexiva.</p>
+                </div>
             </div>
-            <div id="funesto" class="term-card">
-                <div class="term-header"><h2 class="term-name">Funesto</h2></div>
-                <div class="term-definition"><p>Que causa desgracia, dolor o muerte. Se usa para describir acontecimientos o hechos trágicos.</p></div>
+
+            <!-- HISTORIA ORDINARIA -->
+            <div id="ulluco" class="term-card" data-texto="historia_ordinaria">
+                <div class="term-header">
+                    <h2 class="term-name">Ulluco</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Tubérculo andino comestible, de gran valor cultural y alimenticio en comunidades rurales.</p>
+                </div>
             </div>
-            <div id="interpelamos" class="term-card">
-                <div class="term-header"><h2 class="term-name">Interpelamos</h2></div>
-                <div class="term-definition"><p>Acción de llamar, preguntar o dirigirse a alguien para pedir explicaciones o cuestionar una situación.</p></div>
+
+            <div id="chapolas" class="term-card" data-texto="historia_ordinaria">
+                <div class="term-header">
+                    <h2 class="term-name">Chapolas</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Mariposas que en algunas regiones representan símbolos de transformación o augurios.</p>
+                </div>
             </div>
+
+            <div id="incautos" class="term-card" data-texto="historia_ordinaria">
+                <div class="term-header">
+                    <h2 class="term-name">Incautos</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Personas desprevenidas o confiadas que son engañadas con facilidad.</p>
+                </div>
+            </div>
+
+            <!-- HAMBRUNA -->
+            <div id="esmad" class="term-card" data-texto="hambruna">
+                <div class="term-header">
+                    <h2 class="term-name">ESMAD</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Escuadrón Móvil Antidisturbios, cuerpo policial en Colombia encargado de controlar
+                        manifestaciones públicas.</p>
+                </div>
+            </div>
+
+            <div id="desgonzado" class="term-card" data-texto="hambruna">
+                <div class="term-header">
+                    <h2 class="term-name">Desgonzado</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Estado de debilidad extrema o de pérdida de energía, como si algo se hubiera desarticulado.</p>
+                </div>
+            </div>
+
+            <div id="cubito_dorsal" class="term-card" data-texto="hambruna">
+                <div class="term-header">
+                    <h2 class="term-name">Cúbito dorsal</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Posición corporal en la que una persona se encuentra recostada boca arriba.</p>
+                </div>
+            </div>
+
+            <div id="funesto" class="term-card" data-texto="hambruna">
+                <div class="term-header">
+                    <h2 class="term-name">Funesto</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Que produce desgracia, dolor o muerte; se asocia a sucesos trágicos.</p>
+                </div>
+            </div>
+
+            <div id="fao" class="term-card" data-texto="hambruna">
+                <div class="term-header">
+                    <h2 class="term-name">FAO</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Organización de las Naciones Unidas para la Alimentación y la Agricultura, encargada de combatir
+                        el hambre en el mundo.</p>
+                </div>
+            </div>
+
+            <div id="comorbilidades" class="term-card" data-texto="hambruna">
+                <div class="term-header">
+                    <h2 class="term-name">Comorbilidades</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Presencia de dos o más enfermedades simultáneas en una persona, lo que complica diagnóstico y
+                        tratamiento.</p>
+                </div>
+            </div>
+
+            <!-- AMOR EN TIEMPOS DE TECNOLOGÍA -->
+            <div id="exteriorizacion" class="term-card" data-texto="amor">
+                <div class="term-header">
+                    <h2 class="term-name">Exteriorización</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Manifestar o expresar sentimientos e ideas que estaban en el interior.</p>
+                </div>
+            </div>
+
+            <div id="boicotee" class="term-card" data-texto="amor">
+                <div class="term-header">
+                    <h2 class="term-name">Boicotee</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Acción de obstaculizar o interrumpir una actividad como forma de rechazo o protesta.</p>
+                </div>
+            </div>
+
+            <!-- TIPOS DE CONCIENCIA -->
+            <div id="praxis" class="term-card" data-texto="t_conciencia">
+                <div class="term-header">
+                    <h2 class="term-name">Praxis</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Práctica consciente que une teoría y acción en la transformación de la realidad.</p>
+                </div>
+            </div>
+
+            <div id="inmerso" class="term-card" data-texto="t_conciencia">
+                <div class="term-header">
+                    <h2 class="term-name">Inmerso</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Estar profundamente involucrado o concentrado en una situación o contexto.</p>
+                </div>
+            </div>
+
+            <div id="intransitiva" class="term-card" data-texto="t_conciencia">
+                <div class="term-header">
+                    <h2 class="term-name">Conciencia intransitiva</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Forma de conciencia centrada en la supervivencia y necesidades inmediatas, sin reflexión crítica.
+                    </p>
+                </div>
+            </div>
+
+            <div id="transitiva" class="term-card" data-texto="t_conciencia">
+                <div class="term-header">
+                    <h2 class="term-name">Conciencia transitiva</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Capacidad de reflexionar, analizar críticamente la realidad y transformarla.</p>
+                </div>
+            </div>
+
+            <div id="gregarismo" class="term-card" data-texto="t_conciencia">
+                <div class="term-header">
+                    <h2 class="term-name">Gregarismo</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Tendencia de los seres humanos a actuar siguiendo al grupo sin cuestionamiento individual.</p>
+                </div>
+            </div>
+
+            <div id="dialogicos" class="term-card" data-texto="t_conciencia">
+                <div class="term-header">
+                    <h2 class="term-name">Dialógicos</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Relación basada en el diálogo, el intercambio de ideas y la construcción colectiva de sentido.
+                    </p>
+                </div>
+            </div>
+
+            <!-- INSTITUYENTE -->
+            <div id="instituido" class="term-card" data-texto="instituyente">
+                <div class="term-header">
+                    <h2 class="term-name">Instituido</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Lo establecido y aceptado socialmente como norma, costumbre o estructura.</p>
+                </div>
+            </div>
+
+            <div id="instituyente" class="term-card" data-texto="instituyente">
+                <div class="term-header">
+                    <h2 class="term-name">Instituyente</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Fuerza transformadora que cuestiona lo establecido y crea nuevas formas sociales o culturales.
+                    </p>
+                </div>
+            </div>
+
+            <div id="microsociologica" class="term-card" data-texto="instituyente">
+                <div class="term-header">
+                    <h2 class="term-name">Microsociológica</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Enfoque que estudia los fenómenos sociales a pequeña escala, como interacciones cotidianas.</p>
+                </div>
+            </div>
+
+            <div id="coercitivo" class="term-card" data-texto="instituyente">
+                <div class="term-header">
+                    <h2 class="term-name">Coercitivo</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Que impone autoridad o normas mediante la fuerza o presión.</p>
+                </div>
+            </div>
+
+            <div id="anomia" class="term-card" data-texto="instituyente">
+                <div class="term-header">
+                    <h2 class="term-name">Anomia</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Falta de normas claras en una sociedad que provoca desorganización y desorientación social.</p>
+                </div>
+            </div>
+
+            <div id="atipismo" class="term-card" data-texto="instituyente">
+                <div class="term-header">
+                    <h2 class="term-name">Atipismo</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Carácter de lo que no se ajusta a lo común o típico en una sociedad.</p>
+                </div>
+            </div>
+
+            <div id="neoliberal" class="term-card" data-texto="instituyente">
+                <div class="term-header">
+                    <h2 class="term-name">Neoliberal</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Modelo económico y político que prioriza el libre mercado, la privatización y la reducción del
+                        papel del Estado.</p>
+                </div>
+            </div>
+
+            <div id="subversivo" class="term-card" data-texto="instituyente">
+                <div class="term-header">
+                    <h2 class="term-name">Subversivo</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Que busca alterar o transformar el orden establecido.</p>
+                </div>
+            </div>
+
+            <div id="conjuntista_identitario" class="term-card" data-texto="instituyente">
+                <div class="term-header">
+                    <h2 class="term-name">Conjuntista-identitario</h2>
+                </div>
+                <div class="term-definition">
+                    <p>Concepto de Castoriadis que describe lo social como un conjunto organizado de significaciones
+                        compartidas que dan identidad a una sociedad.</p>
+                </div>
+            </div>
+
         </div>
+
 
         <!-- Categorías -->
         <div class="categories-section">
             <h2 class="section-title">Categorías de Términos</h2>
             <div class="categories-grid">
-                <div class="category-card"><div class="category-icon"><i class="fas fa-brain"></i></div><h3 class="category-name">General</h3><div class="category-count">11 términos</div></div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-brain"></i></div>
+                    <h3 class="category-name">General</h3>
+                    <div class="category-count">11 términos</div>
+                </div>
             </div>
         </div>
 
@@ -147,33 +464,56 @@
     </main>
 
     <script>
-      const searchInput = document.querySelector('.search-input');
-      const termCards = document.querySelectorAll('.term-card');
-      const letterButtons = document.querySelectorAll('.letter-btn');
+        const searchInput = document.querySelector('.search-input');
+        const termCards = document.querySelectorAll('.term-card');
+        const letterButtons = document.querySelectorAll('.letter-btn');
 
-      searchInput.addEventListener('input', () => {
-        const value = searchInput.value.toLowerCase();
-        termCards.forEach(card => {
-          const name = card.querySelector('.term-name').textContent.toLowerCase();
-          card.style.display = name.includes(value) ? '' : 'none';
+        searchInput.addEventListener('input', () => {
+            const value = searchInput.value.toLowerCase();
+            termCards.forEach(card => {
+                const name = card.querySelector('.term-name').textContent.toLowerCase();
+                card.style.display = name.includes(value) ? '' : 'none';
+            });
         });
-      });
 
-      letterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const letter = btn.textContent.toLowerCase();
-          termCards.forEach(card => {
-            const name = card.querySelector('.term-name').textContent.toLowerCase();
-            card.style.display = name.startsWith(letter) ? '' : 'none';
-          });
+        letterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const letter = btn.textContent.toLowerCase();
+                termCards.forEach(card => {
+                    const name = card.querySelector('.term-name').textContent.toLowerCase();
+                    card.style.display = name.startsWith(letter) ? '' : 'none';
+                });
+            });
         });
-      });
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const textoButtons = document.querySelectorAll('.index-item');
+    const termCards = document.querySelectorAll('.term-card');
+
+    textoButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filtro = button.getAttribute('data-filter');
+
+            termCards.forEach(card => {
+                if (filtro === 'all' || card.getAttribute('data-texto') === filtro) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // marcar botón activo
+            textoButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        });
+    });
+});
     </script>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         // Inicialización de partículas
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             particlesJS('particles-js', {
                 particles: {
                     number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -211,7 +551,7 @@
 
             // Botón de volver arriba
             const backToTopButton = document.querySelector('.back-to-top');
-            
+
             window.addEventListener('scroll', () => {
                 if (window.pageYOffset > 300) {
                     backToTopButton.classList.add('visible');
@@ -228,14 +568,14 @@
             // Filtrado de términos
             const searchInput = document.querySelector('.search-input');
             const termCards = document.querySelectorAll('.term-card');
-            
+
             searchInput.addEventListener('input', () => {
                 const searchTerm = searchInput.value.toLowerCase();
-                
+
                 termCards.forEach(card => {
                     const termName = card.querySelector('.term-name').textContent.toLowerCase();
                     const termDefinition = card.querySelector('.term-definition').textContent.toLowerCase();
-                    
+
                     if (termName.includes(searchTerm) || termDefinition.includes(searchTerm)) {
                         card.style.display = 'block';
                     } else {
@@ -246,16 +586,17 @@
 
             // Filtrado por letra
             const letterButtons = document.querySelectorAll('.letter-btn');
-            
+
             letterButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     letterButtons.forEach(btn => btn.classList.remove('active'));
                     button.classList.add('active');
-                    
+
                     // Aquí iría la lógica para filtrar por letra
                 });
             });
         });
     </script>
 </body>
+
 </html>
