@@ -433,6 +433,13 @@ img {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(15, 255, 80, 0.2);
 }
+.mejorada {
+  filter: contrast(2.08) saturate(1.07) brightness(1.02);
+  /* para compatibilidad */
+  -webkit-filter: contrast(2.08) saturate(1.07) brightness(1.02);
+  transition: filter .25s ease;
+}
+
 
 /* Citas */
 .quotes-container {

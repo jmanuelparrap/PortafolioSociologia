@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociología: Tipos de Conciencia - Portafolio Académico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-text">Portafolio De Evidencias</div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Actividades <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="los_nadies.html"><i class="fas fa-book"></i> Los Nadies</a></li>
+                            <li><a href="sobre_lectura.html"><i class="fas fa-book-open"></i> Sobre la Lectura</a></li>
+                            <li><a href="historia_ordinaria.html"><i class="fas fa-scroll"></i> Historia Ordinaria</a>
+                            </li>
+                            <li><a href="hambruna.html"><i class="fas fa-utensils"></i> Hambruna</a></li>
+                            <li><a href="el_amor.html"><i class="fas fa-heart"></i> El Amor En Tiempos de Tecnología</a>
+                            </li>
+                            <li><a href="instituidoVSinstituyente.html"><i class="fas fa-balance-scale"></i> Instituido
+                                    VS Instituyente</a></li>
+                            <li><a href="tipos_conciencia.html"><i class="fas fa-brain"></i> Sociología: Tipos de
+                                    Conciencia</a></li>
+                            <li><a href="biografias.html"><i class="fas fa-user"></i> Biografías</a></li>
+                            <li><a href="glosario.html"><i class="fas fa-font"></i> Glosario</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-details">
+        <a href="index.html#proyectos" class="back-button">
+            <i class="fas fa-arrow-left"></i> Volver a Inicio
+        </a>
+
+        <div class="project-header">
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-icon"><i class="fas fa-calendar-alt"></i></span>
+                    <span class="meta-text">Agosto 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon"><i class="fas fa-tag"></i></span>
+                    <span class="meta-text">Sociología</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon"><i class="fas fa-user"></i></span>
+                    <span class="meta-text">Actividad Corte 1</span>
+                </div>
+            </div>
+        </div>
+
+            <div class="project-info">
+                <h1 class="project-title">Lista de Chequeo</h1>
+            </div>
+        <div class="pdf-container">
+            <embed src="docs/LISTA_CHEQUEO_PRIMERO_COHORTE_EVALUATIVO_SEM_B_2025_SOCIOLOGÍA-JMPP.pdf" type="application/pdf"/>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Inicialización de partículas
+        document.addEventListener('DOMContentLoaded', function () {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: "#0fff50" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.5, random: true },
+                    size: { value: 3, random: true },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#0fff50",
+                        opacity: 0.4,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2,
+                        direction: "none",
+                        random: true,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: true, mode: "repulse" },
+                        onclick: { enable: true, mode: "push" },
+                        resize: true
+                    }
+                },
+                retina_detect: true
+            });
+        });
+    </script>
+</body>
+
+</html>
